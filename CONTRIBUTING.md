@@ -6,7 +6,7 @@ Thank you for your interest in contributing to **CadBridge**!
 
 1. Fork and clone the repository:
    ```bash
-   git clone https://github.com/mdzihan0165-stack/cadbridge.git
+   git clone https://github.com/mdzihan0165-stack/cadbridge-.git
    cd cadbridge
    ```
 

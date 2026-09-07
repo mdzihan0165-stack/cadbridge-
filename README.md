@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/mdzihan0165-stack/cadbridge/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
+  <a href="https://github.com/mdzihan0165-stack/cadbridge-/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
   <img src="https://img.shields.io/badge/Python-3.10%2B-3776AB.svg?logo=python&logoColor=white" alt="Python 3.10+">
   <img src="https://img.shields.io/badge/AutoCAD-DXF%20R2018%20(AC1032)-EB3C00.svg?logo=autodesk&logoColor=white" alt="AutoCAD DXF R2018">
   <img src="https://img.shields.io/badge/Layer%20Standard-AIA%20%7C%20ISO%2013567-purple.svg" alt="AIA CAD / ISO 13567">
@@ -104,7 +104,7 @@ cadbridge/
 
 ```bash
 # Clone the repository
-git clone https://github.com/mdzihan0165-stack/cadbridge.git
+git clone https://github.com/mdzihan0165-stack/cadbridge-.git
 cd cadbridge
 
 # Install dependencies
