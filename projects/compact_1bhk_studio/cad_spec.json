@@ -1,0 +1,191 @@
+{
+  "project": {
+    "name": "Compact 1-BHK Studio Apartment",
+    "project_id": "STUDIO-650-01",
+    "client": "Urban Living Concepts",
+    "designer": "Montasir Tajwar Jihan",
+    "date": "2026-09-08",
+    "units": "mm",
+    "scale": "1:50",
+    "drawing_number": "A-201",
+    "revision": "R2"
+  },
+  "settings": {
+    "units": "mm",
+    "wall_exterior_thickness": 250,
+    "wall_interior_thickness": 125,
+    "default_ceiling_height": 2900,
+    "grid_snap": 50,
+    "north_angle_deg": 30.0,
+    "auto_exterior_dimensions": true,
+    "include_title_block": true
+  },
+  "rooms": [
+    {
+      "id": "living_lounge",
+      "name": "LIVING & DINING",
+      "category": "living",
+      "rect": [0, 0, 4200, 4500],
+      "finish": "Vitrified Tile",
+      "color": "cyan"
+    },
+    {
+      "id": "kitchen",
+      "name": "KITCHENETTE",
+      "category": "service",
+      "rect": [4200, 0, 2800, 2700],
+      "finish": "Ceramic Tile",
+      "color": "magenta"
+    },
+    {
+      "id": "bathroom",
+      "name": "BATHROOM",
+      "category": "bathroom",
+      "rect": [4200, 2700, 2800, 1800],
+      "finish": "Ceramic Tile",
+      "color": "yellow"
+    },
+    {
+      "id": "sleeping_zone",
+      "name": "BEDROOM",
+      "category": "bedroom",
+      "rect": [0, 4500, 4200, 4000],
+      "finish": "Hardwood",
+      "color": "green"
+    },
+    {
+      "id": "balcony",
+      "name": "BALCONY",
+      "category": "outdoor",
+      "rect": [4200, 4500, 2800, 2200],
+      "finish": "Deck Tile",
+      "color": "cyan"
+    },
+    {
+      "id": "utility_study",
+      "name": "STUDY / WORK",
+      "category": "study",
+      "rect": [4200, 6700, 2800, 1800],
+      "finish": "Hardwood",
+      "color": "yellow"
+    }
+  ],
+  "openings": {
+    "doors": [
+      {
+        "id": "DM",
+        "label": "DM (1000x2100)",
+        "pos": [1200, 0],
+        "width": 1000,
+        "height": 2100,
+        "orientation": "S",
+        "swing": "left",
+        "type": "single"
+      },
+      {
+        "id": "D1",
+        "label": "D1 (900x2100)",
+        "pos": [800, 4500],
+        "width": 900,
+        "height": 2100,
+        "orientation": "S",
+        "swing": "left",
+        "type": "single"
+      },
+      {
+        "id": "D2",
+        "label": "D2 (750x2100)",
+        "pos": [4200, 3200],
+        "width": 750,
+        "height": 2100,
+        "orientation": "W",
+        "swing": "left",
+        "type": "single"
+      },
+      {
+        "id": "D3",
+        "label": "D3 (1000x2100)",
+        "pos": [4200, 5200],
+        "width": 1000,
+        "height": 2100,
+        "orientation": "W",
+        "swing": "left",
+        "type": "single"
+      },
+      {
+        "id": "D4",
+        "label": "D4 (900x2100)",
+        "pos": [4200, 7200],
+        "width": 900,
+        "height": 2100,
+        "orientation": "W",
+        "swing": "left",
+        "type": "single"
+      }
+    ],
+    "windows": [
+      {
+        "id": "W1",
+        "label": "W1 (1200x1200)",
+        "pos": [2800, 0],
+        "width": 1200,
+        "height": 1200,
+        "sill_height": 900,
+        "orientation": "S"
+      },
+      {
+        "id": "W2",
+        "label": "W2 (1500x1200)",
+        "pos": [1300, 8500],
+        "width": 1500,
+        "height": 1200,
+        "sill_height": 900,
+        "orientation": "N"
+      },
+      {
+        "id": "W3",
+        "label": "W3 (1200x1200)",
+        "pos": [5000, 8500],
+        "width": 1200,
+        "height": 1200,
+        "sill_height": 900,
+        "orientation": "N"
+      },
+      {
+        "id": "W4",
+        "label": "W4 (1200x1000)",
+        "pos": [7000, 1350],
+        "width": 1200,
+        "height": 1000,
+        "sill_height": 1050,
+        "orientation": "E"
+      },
+      {
+        "id": "V1",
+        "label": "V1 (600x600)",
+        "pos": [7000, 3600],
+        "width": 600,
+        "height": 600,
+        "sill_height": 1800,
+        "orientation": "E"
+      }
+    ]
+  },
+  "columns": [
+    {"id": "C1", "pos": [0, 0], "size": [300, 300]},
+    {"id": "C2", "pos": [4200, 0], "size": [300, 300]},
+    {"id": "C3", "pos": [7000, 0], "size": [300, 300]},
+    {"id": "C4", "pos": [0, 4500], "size": [300, 300]},
+    {"id": "C5", "pos": [4200, 4500], "size": [300, 300]},
+    {"id": "C6", "pos": [7000, 4500], "size": [300, 300]},
+    {"id": "C7", "pos": [0, 8500], "size": [300, 300]},
+    {"id": "C8", "pos": [4200, 8500], "size": [300, 300]},
+    {"id": "C9", "pos": [7000, 8500], "size": [300, 300]}
+  ],
+  "fixtures": [
+    {"id": "sofa_living", "type": "sofa_3seater", "pos": [200, 1200], "rotation": 90},
+    {"id": "bed_master", "type": "bed_queen", "pos": [1350, 6400], "rotation": 0},
+    {"id": "wc_bath", "type": "toilet_water_closet", "pos": [4400, 2800], "rotation": 90},
+    {"id": "basin_bath", "type": "wash_basin", "pos": [6200, 2800], "rotation": 90}
+  ]
+}
