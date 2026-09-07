@@ -84,10 +84,6 @@ cadbridge/
 │       └── cad_boq.py         # Area schedules & opening takeoff (MD / CSV)
 ├── tests/                     # Unit test suite
 │   └── test_compiler.py       # Compiler and solver unit tests
-├── projects/                  # Architectural benchmark designs
-│   ├── modern_2bhk_apartment/ # 850 sq.ft residential 2BHK apartment
-│   ├── compact_1bhk_studio/   # 650 sq.ft urban studio apartment
-│   └── medical_consultation_clinic/ # 1,200 sq.ft healthcare clinic
 ├── .github/workflows/         # CI/CD Automated testing pipelines
 ├── json2dxf.py                # Standalone compiler CLI
 ├── cad_snapshot.py            # Standalone headless renderer CLI
@@ -105,7 +101,7 @@ cadbridge/
 ```bash
 # Clone the repository
 git clone https://github.com/mdzihan0165-stack/cadbridge-.git
-cd cadbridge
+cd cadbridge-
 
 # Install dependencies
 pip install -r requirements.txt
@@ -117,24 +113,24 @@ pip install -e .
 ### 2. Compile a Spec to AutoCAD DXF
 
 ```bash
-# Compile to DXF and automatically render a dark-mode snapshot
-python json2dxf.py projects/medical_consultation_clinic/cad_spec.json -o build/clinic.dxf --snapshot --theme dark
+# Compile template spec to DXF and automatically render a dark-mode snapshot
+python json2dxf.py spec_template.json -o build/sample_floorplan.dxf --snapshot --theme dark
 ```
 
 ### 3. Generate Headless Plot Previews (Dark & Light)
 
 ```bash
 # AutoCAD Model Space (Dark Theme)
-python cad_snapshot.py build/clinic.dxf -o build/preview_dark.png --theme dark
+python cad_snapshot.py build/sample_floorplan.dxf -o build/preview_dark.png --theme dark
 
 # Architectural Paper Plot (Light Theme)
-python cad_snapshot.py build/clinic.dxf -o build/preview_light.png --theme light
+python cad_snapshot.py build/sample_floorplan.dxf -o build/preview_light.png --theme light
 ```
 
 ### 4. Extract Automated Bill of Quantities (BOQ)
 
 ```bash
-python cad_boq.py projects/medical_consultation_clinic/cad_spec.json -o build/boq.md --csv build/rooms.csv
+python cad_boq.py spec_template.json -o build/boq.md --csv build/rooms.csv
 ```
 
 ### 5. Run 2D Planar Constraint Solver
