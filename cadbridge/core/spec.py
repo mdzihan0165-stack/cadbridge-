@@ -43,6 +43,7 @@ class Room:
     polygon: Optional[List[List[float]]] = None # [[x1, y1], [x2, y2], ...]
     finish: str = "Standard"
     color: str = "white"
+    is_open: bool = False  # Open circulation/lobby/corridor (no bounding walls)
 
     @property
     def bounds(self) -> Tuple[float, float, float, float]:
@@ -160,7 +161,8 @@ class CADSpec:
                 rect=r.get("rect"),
                 polygon=r.get("polygon"),
                 finish=r.get("finish", "Standard"),
-                color=r.get("color", "white")
+                color=r.get("color", "white"),
+                is_open=bool(r.get("is_open", False))
             ))
 
         openings = data.get("openings", {})

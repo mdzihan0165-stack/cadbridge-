@@ -65,3 +65,4 @@ CadBridge generates standard parametric blocks in DXF:
 3. **Circulation Clearance:** Ensure every room has an accessible door opening and clear circulation path.
 4. **Legibility:** Verify text tags and area numbers do not obscure furniture or dimension lines.
 5. **Title Block & Metadata:** Confirm project metadata, scale, and designer name (**Montasir Tajwar Jihan**) are correctly displayed in the title block.
+6. **Open Circulation & Zoned Spaces:** Public waiting lounges, entrance foyers, corridors, and island nurse/reception counters must be flagged with `"is_open": true` in `cad_spec.json` to prevent boxing them with interior partition walls.

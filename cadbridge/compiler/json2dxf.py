@@ -73,6 +73,8 @@ def _draw_rooms_and_walls(msp, spec: CADSpec) -> None:
     # Collect all unique wall edges
     edges_count = {}
     for room in spec.rooms:
+        if room.is_open:
+            continue
         if room.rect:
             x, y, w, h = room.rect
             room_edges = [
